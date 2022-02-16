@@ -17,31 +17,31 @@ Once you have access to the Domino training environment use the search bar to di
 
 Select the project called WineQuality
 
-![image](raw/latest/readme_images/Search.png)
+![image](readme_images/Search.png)
 
 Read the readme to learn more about the project's use case, status, etc.
 
 In the top right corner, choose the icon to **fork** the project. Name the project *yourname-Domino-Training*
 
-![image](raw/latest/readme_images/Fork.png)
+![image](readme_images/Fork.png)
 
 In your new project - go into the settings tab
 
 View the default hardware tier and compute environment - ensure they are set to 'Small' and 'Workshop-Environment' respectively:
 
-![image](raw/latest/readme_images/ProjectSettings.png)
+![image](readme_images/ProjectSettings.png)
 
 Go the access and sharing tab - change your project visibility to **Public**
 
-![image](raw/latest/readme_images/ProjectVisibility.png)
+![image](readme_images/ProjectVisibility.png)
 
-<img src = raw/latest/readme_images/ProjectVisibility.png width="400">
+<img src = readme_images/ProjectVisibility.png width="400">
 
 Add your instructor or another attendee as a collaborator in your project. 
-![image](raw/latest/readme_images/AddCollaborator.png)
+![image](readme_images/AddCollaborator.png)
 
 Change their permissions to results consumer.
-![image](raw/latest/readme_images/ResultsConsumer.png)
+![image](readme_images/ResultsConsumer.png)
 
 ### Lab 1.2 - Defining Project Goals
 
@@ -49,26 +49,26 @@ Click back into the Overview area of your project. Then navigate to the manage t
 
 Click on add some goals
 
-![image](raw/latest/readme_images/AddProjectGoals.png)
+![image](readme_images/AddProjectGoals.png)
 
 For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the left to mark the goal as in 'Data Acquisition and Exploration' status.
 
 
-![image](raw/latest/readme_images/Goal1status.png)
+![image](readme_images/Goal1status.png)
 
 [optional] - Add a comment to the goal and tag a collaborator you've added earlier by typing @ then their username
 
-![image](raw/latest/readme_images/Goal1comment.png)
+![image](readme_images/Goal1comment.png)
 
 ### Lab 1.3 - Add Data Source
 
 We will now add data connection defined by an admin to our project to later query in data. To do so - navigate to the Data tab of your projects
 
-![image](raw/latest/readme_images/AddDataSource.png)
+![image](readme_images/AddDataSource.png)
 
 Select the 'domino-winequality-workshop' s3 bucket connection and click add to project
 
-![image](raw/latest/readme_images/AddS3.png)
+![image](readme_images/AddS3.png)
 
 
 This concludes all labs in section 1 - Prepare Project and Data! 

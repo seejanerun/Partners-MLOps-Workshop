@@ -35,8 +35,6 @@ Go the access and sharing tab - change your project visibility to **Public**
 
 ![image](readme_images/ProjectVisibility.png)
 
-<img src = readme_images/ProjectVisibility.png width="400">
-
 Add your instructor or another attendee as a collaborator in your project. 
 ![image](readme_images/AddCollaborator.png)
 

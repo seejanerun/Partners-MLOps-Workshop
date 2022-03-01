@@ -70,3 +70,61 @@ Select the 'domino-winequality-workshop' s3 bucket connection and click add to p
 
 
 This concludes all labs in section 1 - Prepare Project and Data! 
+
+## Section 2 - Develop Model
+
+### Lab 2.1 - Inspect Compute Environment
+Click on the cube icon on the far left sidebar of the UI
+
+Select 'Domino-Workshop-Environment' 
+
+Inspect the dockerfile to understand the python & R packages installed, configurations specified, kernels installed etc. 
+
+Scroll down to Pluggable Workspaces Tools - this is the area in the compute environment where IDEs are made available for end users
+
+
+Scroll down to the Run Setup Scripts section
+
+Here we have a script that executes upon startup of workspace sessions or job (pre-run script) and a script that executes upon termination of a workspace session or job (post-run script) 
+
+Click on the revisions tab - here you can see all the versions of an environemnt that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
+which revesion becomes the active version
+
+Finally navigate to the projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
+
+
+Click into the Workspaces tab to prepare for the next lab.
+
+### Lab 2.2 - Exploring Workspaces
+
+In the top right corner click Create New Workspace
+
+Click the Workspace Environemnt dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
+
+Select JupyterLab as the Workspace IDE
+
+Click the Hardware Tier dropdown to browse all available hardware configurations - ensure that Small is selected. 
+
+Click Launch now.
+
+
+Once the workspace is launched, create a new python notebook by clicking here:
+
+When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below -
+
+Copy the provided code snippet into your notebook and run the cell
+
+After thats run copy the code below into a following cell - 
+
+```python
+from io import StringIO
+import pandas as pd
+
+s=str(objects[0].get(),'utf-8')
+data = StringIO(s) 
+
+df=pd.read_csv(data)
+df.head()
+```
+
+### Lab 2.3 - Syncing Files

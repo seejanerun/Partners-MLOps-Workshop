@@ -19,6 +19,11 @@ Select the project called WineQuality
 
 ![image](readme_images/Search.png)
 
+<p align="center">
+
+<img src = readme_images/Search.png width="400">
+</p>
+
 Read the readme to learn more about the project's use case, status, etc.
 
 In the top right corner, choose the icon to **fork** the project. Name the project *yourname-Domino-Training*

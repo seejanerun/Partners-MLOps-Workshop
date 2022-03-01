@@ -21,7 +21,7 @@ Select the project called WineQuality
 
 <p align="center">
 
-<img src = readme_images/Search.png width="700">
+<img src = readme_images/Search.png width="800">
 </p>
 
 Read the readme to learn more about the project's use case, status, etc.
@@ -32,7 +32,7 @@ In the top right corner, choose the icon to **fork** the project. Name the proje
 
 <p align="center">
 
-<img src = readme_images/Fork.png width="700">
+<img src = readme_images/Fork.png width="800">
 </p>
 
 In your new project - go into the settings tab
@@ -43,7 +43,7 @@ View the default hardware tier and compute environment - ensure they are set to 
 
 <p align="center">
 
-<img src = readme_images/ProjectSettings.png width="700">
+<img src = readme_images/ProjectSettings.png width="800">
 </p>
 
 Go the access and sharing tab - change your project visibility to **Public**
@@ -52,7 +52,7 @@ Go the access and sharing tab - change your project visibility to **Public**
 
 <p align="center">
 
-<img src = readme_images/ProjectVisibility.png width="700">
+<img src = readme_images/ProjectVisibility.png width="800">
 </p>
 
 Add your instructor or another attendee as a collaborator in your project. 
@@ -60,7 +60,7 @@ Add your instructor or another attendee as a collaborator in your project.
 
 <p align="center">
 
-<img src = readme_images/AddCollaborator.png width="700">
+<img src = readme_images/AddCollaborator.png width="800">
 </p>
 
 Change their permissions to results consumer.
@@ -68,7 +68,7 @@ Change their permissions to results consumer.
 
 <p align="center">
 
-<img src = readme_images/ResultsConsumer.png width="700">
+<img src = readme_images/ResultsConsumer.png width="800">
 </p>
 
 ### Lab 1.2 - Defining Project Goals
@@ -81,7 +81,7 @@ Click on add some goals
 
 <p align="center">
 
-<img src = readme_images/AddProjectGoals.png width="700">
+<img src = readme_images/AddProjectGoals.png width="800">
 </p>
 
 For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the left to mark the goal as in 'Data Acquisition and Exploration' status.
@@ -91,7 +91,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 <p align="center">
 
-<img src = readme_images/Goal1status.png width="700">
+<img src = readme_images/Goal1status.png width="800">
 </p>
 
 [optional] - Add a comment to the goal and tag a collaborator you've added earlier by typing @ then their username
@@ -100,7 +100,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 <p align="center">
 
-<img src = readme_images/Goal1comment.png width="700">
+<img src = readme_images/Goal1comment.png width="800">
 </p>
 
 ### Lab 1.3 - Add Data Source
@@ -111,7 +111,7 @@ We will now add data connection defined by an admin to our project to later quer
 
 <p align="center">
 
-<img src = readme_images/AddDataSource.png width="700">
+<img src = readme_images/AddDataSource.png width="800">
 </p>
 
 Select the 'domino-winequality-workshop' s3 bucket connection and click add to project
@@ -120,7 +120,7 @@ Select the 'domino-winequality-workshop' s3 bucket connection and click add to p
 
 <p align="center">
 
-<img src = readme_images/AddS3.png width="700">
+<img src = readme_images/AddS3.png width="800">
 </p>
 
 

@@ -20,7 +20,6 @@ Select the project called WineQuality
 <!-- ![image](readme_images/Search.png) -->
 
 <p align="center">
-
 <img src = readme_images/Search.png width="800">
 </p>
 
@@ -31,7 +30,6 @@ In the top right corner, choose the icon to **fork** the project. Name the proje
 <!-- ![image](readme_images/Fork.png) -->
 
 <p align="center">
-
 <img src = readme_images/Fork.png width="800">
 </p>
 
@@ -51,7 +49,6 @@ Go the access and sharing tab - change your project visibility to **Public**
 <!-- ![image](readme_images/ProjectVisibility.png) -->
 
 <p align="center">
-
 <img src = readme_images/ProjectVisibility.png width="800">
 </p>
 
@@ -59,7 +56,6 @@ Add your instructor or another attendee as a collaborator in your project.
 <!-- ![image](readme_images/AddCollaborator.png) -->
 
 <p align="center">
-
 <img src = readme_images/AddCollaborator.png width="800">
 </p>
 
@@ -67,7 +63,6 @@ Change their permissions to results consumer.
 <!-- ![image](readme_images/ResultsConsumer.png) -->
 
 <p align="center">
-
 <img src = readme_images/ResultsConsumer.png width="800">
 </p>
 
@@ -80,7 +75,6 @@ Click on add some goals
 <!-- ![image](readme_images/AddProjectGoals.png) -->
 
 <p align="center">
-
 <img src = readme_images/AddProjectGoals.png width="800">
 </p>
 
@@ -119,7 +113,6 @@ Select the 'domino-winequality-workshop' s3 bucket connection and click add to p
 <!-- ![image](readme_images/AddS3.png) -->
 
 <p align="center">
-
 <img src = readme_images/AddS3.png width="800">
 </p>
 
@@ -154,6 +147,10 @@ Click into the Workspaces tab to prepare for the next lab.
 
 In the top right corner click Create New Workspace
 
+<p align="center">
+<img src = readme_images/AddWorkspace.png width="800">
+</p>
+
 Click the Workspace Environemnt dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
 
 Select JupyterLab as the Workspace IDE
@@ -162,12 +159,27 @@ Click the Hardware Tier dropdown to browse all available hardware configurations
 
 Click Launch now.
 
+<p align="center">
+<img src = readme_images/LaunchWorkspace.png width="800">
+</p>
 
 Once the workspace is launched, create a new python notebook by clicking here:
 
+<p align="center">
+<img src = readme_images/NewNotebook.png width="800">
+</p>
+
 When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below -
 
+<p align="center">
+<img src = readme_images/DataTab.png width="800">
+</p>
+
 Copy the provided code snippet into your notebook and run the cell
+
+<p align="center">
+<img src = readme_images/S3CodeSnippet.png width="800">
+</p>
 
 After thats run copy the code below into a following cell - 
 
@@ -210,9 +222,17 @@ for i in list(important_feats.keys())+['quality']:
 ```
 Rename your notebook 'EDA_code.ipynb' by right clicking on the file name as shown below then click the Save icon.
 
+<p align="center">
+<img src = readme_images/RenameAndSaveNotebook.png width="800">
+</p>
+
 ### Lab 2.3 - Syncing Files
 
 Now that we've finished working on our notebook and written data back to our project, we want to sync our latest work. To do so click on the File Changes tab in the top left corner of your screen - 
+
+<p align="center">
+<img src = readme_images/SyncProject.png width="800">
+</p>
 
 Enter an informative but brief commit message such as "Completed EDA notebook" and click to Sync All Changes. 
 
@@ -220,11 +240,23 @@ Click the Domino logo in the top left to return to your Domino project, then nav
 
 Notice that the latest commit will reflect the commit message you just logged and you can see 'EDA_code.ipynb' in your file directory.
 
+<p align="center">
+<img src = readme_images/DFS.png width="800">
+</p>
+
 Click on your notebook to view it. On the top of your screen click 'Link to Goal' in the dropdown, select the goal you created in Lab 1.2
+
+<p align="center">
+<img src = readme_images/LinkToGoal.png width="800">
+</p>
 
 Now navigate to Overview, then to the manage tab and see your linked notebook.
 
 Click the ellipses on the goal to mark the goal as complete
+
+<p align="center">
+<img src = readme_images/MarkGoalComplete.png width="800">
+</p>
 
 
 ### Lab 2.4 - Run and Track Experiments
@@ -235,25 +267,59 @@ We are taking a three pronged approach and building a model in sklearn (python),
 
 First, navigate back to your JupyterLab workspace tab. In your file browser go into the scripts folder and inspect 'multitrain.py'
 
-If interested - check out the code in the script and comments describing the purpose of each line of code.
+<p align="center">
+<img src = readme_images/MultiTrain.png width="800">
+</p>
+
+Check out the code in the script and comments describing the purpose of each line of code.
 
 You can also check out any of the training scripts that multitrain.py will call.
 
 Open a terminal by clicking the blue plus icon then the terminal icon as shown below - 
 
-Type in the following command
+<p align="center">
+<img src = readme_images/Newterminal.png width="800">
+</p>
+
+Type in the following command and press enter
 
 ```shell
 python scripts/multitrain.py
 ```
 
+You should see the following output
+
+<p align="center">
+<img src = readme_images/MultiTrainKickOff.png width="800">
+</p>
+
 Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page.
 
 Watch as three job runs have appeared, you may see them in starting, running or completed state.
+
+<p align="center">
+<img src = readme_images/Jobs.png width="800">
+</p>
 
 Click into the sklearn.py job run.
 
 In the details tab of the job run note that the compute environment and hardware tier are tracked to document not only who ran the experiment and when, but what versions of the code, software, and hardware were executed.
 
+<p align="center">
+<img src = readme_images/sklearnDetails.png width="800">
+</p>
+
+
 Click into the results tab of the job. Scroll down to view the visualizations and other outputs of the job.
+
+<p align="center">
+<img src = readme_images/sklearnResults.png width="800">
+</p>
+
+
+We've now trained 3 models and it is time to select which model we'd like to deploy.
+
+Inspect the table and graph to understand the R^2 value and Mean Squared Error (MSE) for each model. From our results it looks like the sklearn model is the best candidate to deploy.
+
+In the next section of labs we will deploy the model we trained here!
 

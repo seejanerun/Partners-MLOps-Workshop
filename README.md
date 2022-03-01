@@ -21,7 +21,7 @@ Select the project called WineQuality
 
 <p align="center">
 
-<img src = readme_images/Search.png width="400">
+<img src = readme_images/Search.png width="700">
 </p>
 
 Read the readme to learn more about the project's use case, status, etc.

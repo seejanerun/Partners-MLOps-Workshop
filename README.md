@@ -126,10 +126,13 @@ Click on the cube icon on the far left sidebar of the UI
 
 Select 'Domino-Workshop-Environment' 
 
+<p align="center">
+<img src = readme_images/EnvironmentsPage.png width="800">
+</p>
+
 Inspect the dockerfile to understand the python & R packages installed, configurations specified, kernels installed etc. 
 
 Scroll down to Pluggable Workspaces Tools - this is the area in the compute environment where IDEs are made available for end users
-
 
 Scroll down to the Run Setup Scripts section
 

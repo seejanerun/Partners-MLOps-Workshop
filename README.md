@@ -208,5 +208,52 @@ for i in list(important_feats.keys())+['quality']:
     plt.title('Histogram of {}'.format(i))
     sns.histplot(df[i], kde=True)
 ```
+Rename your notebook 'EDA_code.ipynb' by right clicking on the file name as shown below then click the Save icon.
 
 ### Lab 2.3 - Syncing Files
+
+Now that we've finished working on our notebook and written data back to our project, we want to sync our latest work. To do so click on the File Changes tab in the top left corner of your screen - 
+
+Enter an informative but brief commit message such as "Completed EDA notebook" and click to Sync All Changes. 
+
+Click the Domino logo in the top left to return to your Domino project, then navigate to the Files tab of your project.
+
+Notice that the latest commit will reflect the commit message you just logged and you can see 'EDA_code.ipynb' in your file directory.
+
+Click on your notebook to view it. On the top of your screen click 'Link to Goal' in the dropdown, select the goal you created in Lab 1.2
+
+Now navigate to Overview, then to the manage tab and see your linked notebook.
+
+Click the ellipses on the goal to mark the goal as complete
+
+
+### Lab 2.4 - Run and Track Experiments
+
+Now it's time to train our models! 
+
+We are taking a three pronged approach and building a model in sklearn (python), xgboost (R), and an auto-ml ensemble model (h2o).
+
+First, navigate back to your JupyterLab workspace tab. In your file browser go into the scripts folder and inspect 'multitrain.py'
+
+If interested - check out the code in the script and comments describing the purpose of each line of code.
+
+You can also check out any of the training scripts that multitrain.py will call.
+
+Open a terminal by clicking the blue plus icon then the terminal icon as shown below - 
+
+Type in the following command
+
+```shell
+python scripts/multitrain.py
+```
+
+Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page.
+
+Watch as three job runs have appeared, you may see them in starting, running or completed state.
+
+Click into the sklearn.py job run.
+
+In the details tab of the job run note that the compute environment and hardware tier are tracked to document not only who ran the experiment and when, but what versions of the code, software, and hardware were executed.
+
+Click into the results tab of the job. Scroll down to view the visualizations and other outputs of the job.
+

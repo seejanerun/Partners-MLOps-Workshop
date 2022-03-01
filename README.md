@@ -227,7 +227,9 @@ for i in list(important_feats.keys())+['quality']:
 Finallly write your data to a domino dataset by running
 
 ```python
-df.to_csv('/domino/datasets/local/WineQuality/WineData.csv', index = False)
+import os
+path = str('/domino/datasets/local/{}/WineData.csv'.format(os.environ.get('DOMINO_PROJECT_NAME')))
+df.to_csv('path', index = False)
 ```
 
 Rename your notebook 'EDA_code.ipynb' by right clicking on the file name as shown below then click the Save icon.

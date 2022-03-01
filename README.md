@@ -13,7 +13,7 @@
 ## Section 1 - Project Set Up
 
 ### Lab 1.1 - Forking Existing Projects
-Once you have access to the Domino training environment use the search bar to discover any projects tagged for 'Training'
+Once you have access to the Domino training environment - click the search button in the top left corner of the UI then use the search bar to discover any projects tagged for 'Training'
 
 Select the project called WineQuality
 

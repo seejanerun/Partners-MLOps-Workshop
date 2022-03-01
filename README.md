@@ -223,6 +223,13 @@ for i in list(important_feats.keys())+['quality']:
     plt.title('Histogram of {}'.format(i))
     sns.histplot(df[i], kde=True)
 ```
+
+Finallly write your data to a domino dataset by running
+
+```python
+df.to_csv('/domino/datasets/local/WineQuality/WineData.csv', index = False)
+```
+
 Rename your notebook 'EDA_code.ipynb' by right clicking on the file name as shown below then click the Save icon.
 
 <p align="center">

@@ -70,7 +70,7 @@ Change their permissions to results consumer.
 
 Click back into the Overview area of your project. Then navigate to the manage tab.
 
-Click on add some goals
+Click on Add Goals
 
 <!-- ![image](readme_images/AddProjectGoals.png) -->
 

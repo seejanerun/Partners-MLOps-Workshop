@@ -182,4 +182,31 @@ df=pd.read_csv(data)
 df.head()
 ```
 
+Now cell by cell, enter the following code and run the cells to visualize and prepare the data!
+
+```python
+import seaborn as sns
+import matplotlib.pyplot as plt
+df['is_red'] = df.type.apply(lambda x : int(x=='red'))
+fig = plt.figure(figsize=(10,10))
+sns.heatmap(df.corr(), annot = True, fmt='.1g')
+```
+
+```python
+corr_values = df.corr().sort_values(by = 'quality')['quality'].drop('quality',axis=0)
+important_feats=corr_values[abs(corr_values)>0.08]
+print(important_feats)
+sns.set_theme(style="darkgrid")
+plt.figure(figsize=(16,5))
+plt.title('Feature Importance for Wine Quality')
+plt.ylabel('Pearson Correlation')
+sns.barplot(important_feats.keys(), important_feats.values, palette='seismic_r')
+```
+```python
+for i in list(important_feats.keys())+['quality']:
+    plt.figure(figsize=(8,5))
+    plt.title('Histogram of {}'.format(i))
+    sns.histplot(df[i], kde=True)
+```
+
 ### Lab 2.3 - Syncing Files

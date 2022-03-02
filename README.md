@@ -171,7 +171,7 @@ Once the workspace is launched, create a new python notebook by clicking here:
 <img src = readme_images/NewNotebook.png width="800">
 </p>
 
-When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below -
+When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below
 
 <p align="center">
 <img src = readme_images/DataTab.png width="800">
@@ -183,7 +183,7 @@ Copy the provided code snippet into your notebook and run the cell
 <img src = readme_images/S3CodeSnippet.png width="800">
 </p>
 
-After thats run copy the code below into a following cell - 
+After running the code snippet. Copy the code below into the following cell 
 
 ```python
 from io import StringIO

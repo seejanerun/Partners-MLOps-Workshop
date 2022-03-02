@@ -122,7 +122,7 @@ This concludes all labs in section 1 - Prepare Project and Data!
 ## Section 2 - Develop Model
 
 ### Lab 2.1 - Inspect Compute Environment
-Click on the cube icon on the far left sidebar of the UI
+Click on the cube icon 'Environments' on the far left sidebar of the UI
 
 Select 'Domino-Workshop-Environment' 
 
@@ -130,7 +130,7 @@ Select 'Domino-Workshop-Environment'
 <img src = readme_images/EnvironmentsPage.png width="800">
 </p>
 
-Inspect the dockerfile to understand the python & R packages installed, configurations specified, kernels installed etc. 
+Inspect the dockerfile to understand the packages installed, configurations specified, and kernels installed etc. 
 
 Scroll down to Pluggable Workspaces Tools - this is the area in the compute environment where IDEs are made available for end users
 
@@ -153,7 +153,7 @@ In the top right corner click Create New Workspace
 <img src = readme_images/AddWorkspace.png width="800">
 </p>
 
-Type a name for the Workspace in the Workspace Name cell and next click through the available Compute Environments in the Workspace Environment drop down button. Next, ensure that Domino-Workspace-Environment is selected.
+Type a name for the Workspace in the 'Workspace Name' cell and next click through the available Compute Environments in the Workspace Environment drop down button. Next, ensure that Domino-Workspace-Environment is selected.
 
 Select JupyterLab as the Workspace IDE
 
@@ -286,7 +286,7 @@ Check out the code in the script and comments describing the purpose of each lin
 
 You can also check out any of the training scripts that multitrain.py will call.
 
-Open a terminal by clicking the blue plus icon then the terminal icon as shown below - 
+Open a terminal by clicking the blue plus icon then the terminal icon as shown below 
 
 <p align="center">
 <img src = readme_images/Newterminal.png width="800">
@@ -321,7 +321,7 @@ In the details tab of the job run note that the compute environment and hardware
 </p>
 
 
-Click into the results tab of the job. Scroll down to view the visualizations and other outputs of the job.
+Click on the Results tab of the job. Scroll down to view the visualizations and other outputs of the job.
 
 <p align="center">
 <img src = readme_images/sklearnResults.png width="800">

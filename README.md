@@ -35,7 +35,7 @@ In the top right corner, choose the icon to **fork** the project. Name the proje
 
 In your new project - go into the settings tab
 
-View the default hardware tier and compute environment - ensure they are set to 'Small' and 'Workshop-Environment' respectively:
+View the default hardware tier and compute environment - ensure they are set to 'Small' and 'Domino-Workshop-Environment' respectively:
 
 <!-- ![image](readme_images/ProjectSettings.png) -->
 

@@ -99,7 +99,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 ### Lab 1.3 - Add Data Source
 
-We will now add data connection defined by an admin to our project to later query in data. To do so - navigate to the Data tab of your projects
+We will now add a data connection defined by the admin of our project to later query in data. To do so - navigate to the Data tab of your projects
 
 <!-- ![image](readme_images/AddDataSource.png) -->
 

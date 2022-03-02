@@ -44,7 +44,7 @@ View the default hardware tier and compute environment - ensure they are set to 
 <img src = readme_images/ProjectSettings.png width="800">
 </p>
 
-Go the access and sharing tab - change your project visibility to **Public**
+Go to the Access and Sharing tab - change your project visibility to **Public**
 
 <!-- ![image](readme_images/ProjectVisibility.png) -->
 
@@ -59,7 +59,7 @@ Add your instructor or another attendee as a collaborator in your project.
 <img src = readme_images/AddCollaborator.png width="800">
 </p>
 
-Change their permissions to results consumer.
+Change their permissions to Results Consumer.
 <!-- ![image](readme_images/ResultsConsumer.png) -->
 
 <p align="center">
@@ -68,7 +68,7 @@ Change their permissions to results consumer.
 
 ### Lab 1.2 - Defining Project Goals
 
-Click back into the Overview area of your project. Then navigate to the manage tab.
+Click back into the Overview area of your project. Then navigate to the Manage tab.
 
 Click on Add Goals
 
@@ -78,7 +78,7 @@ Click on Add Goals
 <img src = readme_images/AddProjectGoals.png width="800">
 </p>
 
-For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the left to mark the goal as in 'Data Acquisition and Exploration' status.
+For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the right to mark the goal status as 'Data Acquisition and Exploration'.
 
 
 <!-- ![image](readme_images/Goal1status.png) -->

@@ -312,7 +312,7 @@ Watch as three job runs have appeared, you may see them in starting, running or 
 <img src = readme_images/Jobs.png width="800">
 </p>
 
-Click into the sklearn.py job run.
+Click into the sklearn_model_train.py job run.
 
 In the details tab of the job run note that the compute environment and hardware tier are tracked to document not only who ran the experiment and when, but what versions of the code, software, and hardware were executed.
 

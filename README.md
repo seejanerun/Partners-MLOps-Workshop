@@ -153,7 +153,7 @@ In the top right corner click Create New Workspace
 <img src = readme_images/AddWorkspace.png width="800">
 </p>
 
-Click the Workspace Environment dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
+Type a name for the Workspace in the Workspace Name cell and next click through the available Compute Environments in the Workspace Environment drop down button. Next, ensure that Domino-Workspace-Environment is selected.
 
 Select JupyterLab as the Workspace IDE
 

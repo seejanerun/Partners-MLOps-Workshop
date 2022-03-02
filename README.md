@@ -25,7 +25,7 @@ Select the project called WineQuality
 
 Read the readme to learn more about the project's use case, status, etc.
 
-In the top right corner, choose the icon to **fork** the project. Name the project *yourname-Domino-Training*
+In the top right corner, choose the icon to **fork** the project. Name the project *Domino-Training-yourname*
 
 <!-- ![image](readme_images/Fork.png) -->
 

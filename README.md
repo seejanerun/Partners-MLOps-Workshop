@@ -138,13 +138,13 @@ Scroll down to the Run Setup Scripts section
 
 Here we have a script that executes upon startup of workspace sessions or job (pre-run script) and a script that executes upon termination of a workspace session or job (post-run script) 
 
-Click on the revisions tab - here you can see all the versions of an environemnt that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
+Click on the Revisions tab - here you can see all the versions of an environment that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
 which revesion becomes the active version
 
-Finally navigate to the projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
+Finally navigate to the Projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
 
 
-Click into the Workspaces tab to prepare for the next lab.
+Head back to Projects on the left of the UI and then click on your 'Domino-Training-yourname' project underneath the Your Projects tab. Next click into the Workspaces tab to prepare for the next lab.
 
 ### Lab 2.2 - Exploring Workspaces
 
@@ -154,7 +154,7 @@ In the top right corner click Create New Workspace
 <img src = readme_images/AddWorkspace.png width="800">
 </p>
 
-Click the Workspace Environemnt dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
+Click the Workspace Environment dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
 
 Select JupyterLab as the Workspace IDE
 

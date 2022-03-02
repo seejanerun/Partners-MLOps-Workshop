@@ -143,8 +143,7 @@ which revesion becomes the active version
 
 Finally navigate to the Projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
 
-
-Head back to Projects on the left of the UI and then click on your 'Domino-Training-yourname' project underneath the Your Projects tab. Next click into the Workspaces tab to prepare for the next lab.
+Click into the Workspaces tab to prepare for the next lab.
 
 ### Lab 2.2 - Exploring Workspaces
 

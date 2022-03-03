@@ -25,7 +25,7 @@ Select the project called WineQuality
 
 Read the readme to learn more about the project's use case, status, etc.
 
-In the top right corner, choose the icon to **fork** the project. Name the project *yourname-Domino-Training*
+In the top right corner, choose the icon to **fork** the project. Name the project *Domino-Training-yourname*
 
 <!-- ![image](readme_images/Fork.png) -->
 
@@ -35,7 +35,7 @@ In the top right corner, choose the icon to **fork** the project. Name the proje
 
 In your new project - go into the settings tab
 
-View the default hardware tier and compute environment - ensure they are set to 'Small' and 'Workshop-Environment' respectively:
+View the default hardware tier and compute environment - ensure they are set to 'Small' and 'Domino-Workshop-Environment' respectively:
 
 <!-- ![image](readme_images/ProjectSettings.png) -->
 
@@ -44,7 +44,7 @@ View the default hardware tier and compute environment - ensure they are set to 
 <img src = readme_images/ProjectSettings.png width="800">
 </p>
 
-Go the access and sharing tab - change your project visibility to **Public**
+Go to the Access and Sharing tab - change your project visibility to **Public**
 
 <!-- ![image](readme_images/ProjectVisibility.png) -->
 
@@ -59,7 +59,7 @@ Add your instructor or another attendee as a collaborator in your project.
 <img src = readme_images/AddCollaborator.png width="800">
 </p>
 
-Change their permissions to results consumer.
+Change their permissions to Results Consumer.
 <!-- ![image](readme_images/ResultsConsumer.png) -->
 
 <p align="center">
@@ -68,7 +68,7 @@ Change their permissions to results consumer.
 
 ### Lab 1.2 - Defining Project Goals
 
-Click back into the Overview area of your project. Then navigate to the manage tab.
+Click back into the Overview area of your project. Then navigate to the Manage tab.
 
 Click on Add Goals
 
@@ -78,7 +78,7 @@ Click on Add Goals
 <img src = readme_images/AddProjectGoals.png width="800">
 </p>
 
-For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the left to mark the goal as in 'Data Acquisition and Exploration' status.
+For the goal title type in 'Explore Data' and click save. Once the goal is saved click the drop down on the right to mark the goal status as 'Data Acquisition and Exploration'.
 
 
 <!-- ![image](readme_images/Goal1status.png) -->
@@ -99,7 +99,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 ### Lab 1.3 - Add Data Source
 
-We will now add data connection defined by an admin to our project to later query in data. To do so - navigate to the Data tab of your projects
+We will now add a data connection defined by the admin of our project to later query in data. To do so - navigate to the Data tab of your projects
 
 <!-- ![image](readme_images/AddDataSource.png) -->
 
@@ -122,7 +122,7 @@ This concludes all labs in section 1 - Prepare Project and Data!
 ## Section 2 - Develop Model
 
 ### Lab 2.1 - Inspect Compute Environment
-Click on the cube icon on the far left sidebar of the UI
+Click on the cube icon 'Environments' on the far left sidebar of the UI
 
 Select 'Domino-Workshop-Environment' 
 
@@ -130,7 +130,7 @@ Select 'Domino-Workshop-Environment'
 <img src = readme_images/EnvironmentsPage.png width="800">
 </p>
 
-Inspect the dockerfile to understand the python & R packages installed, configurations specified, kernels installed etc. 
+Inspect the dockerfile to understand the packages installed, configurations specified, and kernels installed etc. 
 
 Scroll down to Pluggable Workspaces Tools - this is the area in the compute environment where IDEs are made available for end users
 
@@ -138,11 +138,10 @@ Scroll down to the Run Setup Scripts section
 
 Here we have a script that executes upon startup of workspace sessions or job (pre-run script) and a script that executes upon termination of a workspace session or job (post-run script) 
 
-Click on the revisions tab - here you can see all the versions of an environemnt that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
+Click on the Revisions tab - here you can see all the versions of an environment that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
 which revesion becomes the active version
 
-Finally navigate to the projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
-
+Finally navigate to the Projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
 
 Click into the Workspaces tab to prepare for the next lab.
 
@@ -154,7 +153,7 @@ In the top right corner click Create New Workspace
 <img src = readme_images/AddWorkspace.png width="800">
 </p>
 
-Click the Workspace Environemnt dropdown to browse all avaiable Compute Environments - ennsure that Domino-Workspace-Environment is selected.
+Type a name for the Workspace in the 'Workspace Name' cell and next click through the available Compute Environments in the Workspace Environment drop down button. Next, ensure that Domino-Workspace-Environment is selected.
 
 Select JupyterLab as the Workspace IDE
 
@@ -172,7 +171,7 @@ Once the workspace is launched, create a new python notebook by clicking here:
 <img src = readme_images/NewNotebook.png width="800">
 </p>
 
-When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below -
+When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below
 
 <p align="center">
 <img src = readme_images/DataTab.png width="800">
@@ -184,7 +183,7 @@ Copy the provided code snippet into your notebook and run the cell
 <img src = readme_images/S3CodeSnippet.png width="800">
 </p>
 
-After thats run copy the code below into a following cell - 
+After running the code snippet. Copy the code below into the following cell 
 
 ```python
 from io import StringIO
@@ -287,7 +286,7 @@ Check out the code in the script and comments describing the purpose of each lin
 
 You can also check out any of the training scripts that multitrain.py will call.
 
-Open a terminal by clicking the blue plus icon then the terminal icon as shown below - 
+Open a terminal by clicking the blue plus icon then the terminal icon as shown below 
 
 <p align="center">
 <img src = readme_images/Newterminal.png width="800">
@@ -313,7 +312,7 @@ Watch as three job runs have appeared, you may see them in starting, running or 
 <img src = readme_images/Jobs.png width="800">
 </p>
 
-Click into the sklearn.py job run.
+Click into the sklearn_model_train.py job run.
 
 In the details tab of the job run note that the compute environment and hardware tier are tracked to document not only who ran the experiment and when, but what versions of the code, software, and hardware were executed.
 
@@ -322,7 +321,7 @@ In the details tab of the job run note that the compute environment and hardware
 </p>
 
 
-Click into the results tab of the job. Scroll down to view the visualizations and other outputs of the job.
+Click on the Results tab of the job. Scroll down to view the visualizations and other outputs of the job.
 
 <p align="center">
 <img src = readme_images/sklearnResults.png width="800">

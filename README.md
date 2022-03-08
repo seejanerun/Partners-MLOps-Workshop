@@ -334,3 +334,49 @@ Inspect the table and graph to understand the R^2 value and Mean Squared Error (
 
 In the next section of labs we will deploy the model we trained here!
 
+
+## Section 3 - Deploy Model
+
+### Lab 3.1 Deploying Model API Endpoint
+
+Now that you have completed model training and selection - it's time to get your model deployed.
+
+In the last lab - we trained a sklearn model and saved it to a serialized (pickle) file. To deploy this trained model - we'll use a script to load in the saved model object and pass new records for scoring. 
+
+To do so - navigate to the **Model APIs** tab in your project. Click **New Model**.
+
+Name your model 'wine-model-<yourname>'
+    
+For the description add the following 
+    
+```
+Model Endpoint to determine the quality of wine
+
+Sample Scoring Request: 
+    
+{
+  "data": {
+    "density":0.99,
+    "volatile_acidity": 0.028,
+    "chlorides": 0.05 ,
+    "is_red":0,
+    "alcohol": 11
+  }
+}
+```
+
+Be sure to check the box *Log HTTP requests and responses to model instance logs* 
+
+In the environments 
+
+For **The file containing the code to invoke (must be a Python or R file)** enter
+
+`scripts/predict.py`
+    
+For **The function to invoke** enter
+    
+`predict`
+    
+And click **Create Model**
+  
+

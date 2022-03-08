@@ -367,7 +367,8 @@ Sample Scoring Request:
 
 Be sure to check the box *Log HTTP requests and responses to model instance logs* 
 
-In the environments 
+For **Choose an Environment** select
+`Model-Deployment-Environment`
 
 For **The file containing the code to invoke (must be a Python or R file)** enter
 
@@ -379,4 +380,16 @@ For **The function to invoke** enter
     
 And click **Create Model**
   
+Over the next 2-5 minutes, you'll see the status of your model go from Preparing to Build -> Building -> Starting -> Running
+    
+Once your model reaches the Running state - a pod containing your model object and code for inference is up and ready to accept REST API calls.
 
+To test your model navigate to the Overview tab. In the request field in the Tester tab enter a scoring request in JSON form. You can copy the sample request that you defined in your description field.
+
+In the response box you will see a **prediction** value representing your model's predicted quality for a bottle of wine with the attributes defined in the Request box. Try changing 'is_red' from 0 to 1 and 'alcohol' from 11 to 5 to see how the predicted quality differs. Feel free to play around with different values in the Request box.
+
+After you have sent a few scoring requests to the model endpoint, check out the instance logs by clicking the Instance Logs button. Here you can see that all scoring requests to the model complete with model inputs, responses, response times, errors, warnings etc. are being logged.
+
+Note that there are several tabs next to the **Tester** tab that provide code snippets to score our model from a web app, command line, or other external source.
+
+In the next lab we will deploy an R shiny app that exposes a front end for collecting model input, passing that input to the model, then parsing the model's response to a dashboard for consumption.

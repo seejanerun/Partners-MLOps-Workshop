@@ -394,7 +394,7 @@ Now, back on your model's overview page - note that there are several tabs next 
 
 In the next lab we will deploy an R shiny app that exposes a front end for collecting model input, passing that input to the model, then parsing the model's response to a dashboard for consumption.
 
-### Lab 3.1 Deploying Web App
+### Lab 3.2 Deploying Web App
     
 Now that we have a pod running to serve new model requests - we will build out a front end to make calling our model easier for end-users.
     
@@ -426,7 +426,7 @@ R -e 'shiny::runApp("./scripts/shiny_app.R", port=8888, host="0.0.0.0")'
 ```
 Name the file **app.sh** and click **Save**
     
-Now navigate back into the Files tab, and enter the scripts folder. Open **shiny_app.R**
+Now navigate back into the Files tab, and enter the scripts folder. Click add a new file and name it **shiny_app.R** paste the following into the file
 
 ```R
 #
@@ -491,10 +491,8 @@ ui <- fluidPage(
  
 prediction <- function(inpFeat1,inpFeat2,inpFeat3,inpFeat4,inpFeat5) {
   
-  url <- "https://demo2.dominodatalab.com:443/models/6226677c41e46779e7316186/latest/model"
-  response <- POST(
-    url,
-    authenticate("HU4jkggHNS7HefKxUVk30biHOZNuPLcB0qT5lurzSLMTn4z4Q4NeTn6Xo8HFjmja", "HU4jkggHNS7HefKxUVk30biHOZNuPLcB0qT5lurzSLMTn4z4Q4NeTn6Xo8HFjmja", type = "basic"),
+#### COPY FULL LINES 4-7 from R tab in Model APIS page directly below
+    
     body=toJSON(list(data=list(density = inpFeat1, 
                                volatile_acidity = inpFeat2,
                                chlorides = inpFeat3,
@@ -564,4 +562,16 @@ server <- function(input, output,session) {
 shinyApp(ui = ui, server = server)
 ```
 
-Save the file. 
+**Go to line 63** note that this is missing input for your model api endpoint. In a new tab navigate to your model API you just deployed. Go into overview and select the R tab as shown below. Copy lines 4-7 from the R code snippet. Switch back to your new file tab and paste the new lines in line 64 in your file.
+
+Lines 61-79 in your file should look like the following (note the url and authenticate values will be different) 
+                   
+Now that you have your app.sh and shiny_app.R files created. Navigate to the **App** tab in your project
+
+Enter a title for your app - 'wine-app-<yourname>'
+
+Click Publish.
+                   
+You'll now see the below screen, once your app is active (should be within ~1-3 minutes) you can click the View App button. 
+        
+Once you're in the app you can try out sending different scoring requests to your model using the form on the right side of your page and see the results in the visualization on the left side.

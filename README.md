@@ -388,8 +388,40 @@ To test your model navigate to the Overview tab. In the request field in the Tes
 
 In the response box you will see a **prediction** value representing your model's predicted quality for a bottle of wine with the attributes defined in the Request box. Try changing 'is_red' from 0 to 1 and 'alcohol' from 11 to 5 to see how the predicted quality differs. Feel free to play around with different values in the Request box.
 
-After you have sent a few scoring requests to the model endpoint, check out the instance logs by clicking the Instance Logs button. Here you can see that all scoring requests to the model complete with model inputs, responses, response times, errors, warnings etc. are being logged.
+After you have sent a few scoring requests to the model endpoint, check out the instance logs by clicking the Instance Logs button. Here you can see that all scoring requests to the model complete with model inputs, responses, response times, errors, warnings etc. are being logged. Close the browser tab that you were viewing the instance logs in. 
 
-Note that there are several tabs next to the **Tester** tab that provide code snippets to score our model from a web app, command line, or other external source.
+Now, back on your model's overview page - note that there are several tabs next to the **Tester** tab that provide code snippets to score our model from a web app, command line, or other external source.
 
 In the next lab we will deploy an R shiny app that exposes a front end for collecting model input, passing that input to the model, then parsing the model's response to a dashboard for consumption.
+
+### Lab 3.1 Deploying Web App
+    
+Now that we have a pod running to serve new model requests - we will build out a front end to make calling our model easier for end-users.
+    
+To do so first navigate back to your **Files** tab and click **New File**
+
+Copy the following code snippet in - 
+
+```shell
+#!/usr/bin/env bash
+ 
+# This is a bash script for Domino's App publishing feature
+# Learn more at http://support.dominodatalab.com/hc/en-us/articles/209150326
+ 
+## R/Shiny Example
+## This is an example of the code you would need in this bash script for a R/Shiny app
+R -e 'shiny::runApp("./scripts/shiny_app.R", port=8888, host="0.0.0.0")'
+ 
+## Flask example
+## This is an example of the code you would need in this bash script for a Python/Flask app
+#export LC_ALL=C.UTF-8
+#export LANG=C.UTF-8
+#export FLASK_APP=app-flask.py
+#export FLASK_DEBUG=1
+#python -m flask run --host=0.0.0.0 --port=8888
+ 
+## Dash Example
+## This is an example of the code you would need in this bash script for a Dash app
+#python app-dash.py
+```
+Name the file **app.sh** and click **Save**

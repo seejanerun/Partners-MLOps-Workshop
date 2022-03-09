@@ -420,7 +420,7 @@ In the next lab we will deploy an R shiny app that exposes a front end for colle
     
 Now that we have a pod running to serve new model requests - we will build out a front end to make calling our model easier for end-users.
     
-To do so first navigate back to your **Files** tab and click **New File**
+To do so - in a new tab first navigate back to your Project then into the **Files** tab and click **New File**
 <p align="center">
 <img src = readme_images/AddNewFileforAppsh.png width="800">
 </p>     

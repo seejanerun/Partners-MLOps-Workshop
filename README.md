@@ -608,9 +608,17 @@ Now that you have your app.sh and shiny_app.R files created. Navigate to the **A
 
 Enter a title for your app - 'wine-app-yourname'
 
+<p align="center">
+<img src = readme_images/LaunchApp.png width="800">
+</p>       
+
 Click Publish.
                    
 You'll now see the below screen, once your app is active (should be within ~1-3 minutes) you can click the View App button. 
+
+<p align="center">
+<img src = readme_images/ViewApp.png width="800">
+</p>       
         
 Once you're in the app you can try out sending different scoring requests to your model using the form on the right side of your page and see the results in the visualization on the left side.
                    
@@ -639,9 +647,13 @@ In the permissions tab update the permissions to allow anyone, including anonymo
 <img src = readme_images/UpdateAppPermissions.png width="800">
 </p>         
 
-Navigate back to the **settings** tab and click **View App**
+Navigate back to the **settings** tab and click **Copy Link App**
 
-Copy the URL from your browser and paste it into a new private/incognito window. Note that you're able to view the app without being logged into Domino. Try sending this URL to a colleague at your company to show them the work you've done.
+<p align="center">
+<img src = readme_images/CopyAppLink.png width="800">
+</p>       
+
+Paste the copied link into a new private/incognito window. Note that you're able to view the app without being logged into Domino. Try sending this URL to a colleague at your company to show them the work you've done.
 
 PS - Domino provides free licenses for business users to login and view models/apps etc.
 

@@ -330,7 +330,7 @@ Click on the Results tab of the job. Scroll down to view the visualizations and 
 
 We've now trained 3 models and it is time to select which model we'd like to deploy.
 
-Inspect the table and graph to understand the R^2 value and Mean Squared Error (MSE) for each model. From our results it looks like the sklearn model is the best candidate to deploy.
+**Refresh the page**. Inspect the table and graph to understand the R^2 value and Mean Squared Error (MSE) for each model. From our results it looks like the sklearn model is the best candidate to deploy.
 
 In the next section of labs we will deploy the model we trained here!
 

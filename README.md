@@ -618,5 +618,33 @@ Once you're in the app you can try out sending different scoring requests to you
 <img src = readme_images/ShinyScore.png width="800">
 </p>         
 
-                   
-                   
+## Section 4 - Collaborate Results
+
+### Lab 4.1 - Share Web App and Model API
+
+Congratulations! You have now gone through a full workflow to pull data from an S3 bucket, clean and visualize the data, train several models across different frameworks, deploy the best performing model, and use a web app front end for easy scoring of your model. Now the final step is to get your model and front end into the hands of the end users.
+
+To do so we will navigate back to our project and click on the **App** tab
+
+<p align="center">
+<img src = readme_images/GoToAppPermissions.png width="800">
+</p>         
+
+
+From the App page navigate to the **Permissions** tab
+
+In the permissions tab update the permissions to allow anyone, including anonymous users
+
+<p align="center">
+<img src = readme_images/UpdateAppPermissions.png width="800">
+</p>         
+
+Navigate back to the **settings** tab and click **View App**
+
+Copy the URL from your browser and paste it into a new private/incognito window. Note that you're able to view the app without being logged into Domino. Try sending this URL to a colleague at your company to show them the work you've done.
+
+PS - Domino provides free licenses for business users to login and view models/apps etc.
+
+### *** End of Labs *** 
+
+So now that we've got our model into production are we done? No! We want to make sure that any models we deploy stay healthy over time, and if our models do drop in performance, we want to quickly identify and remediate any issues. Stay tuned for a demo of integrated model monitoring to see how a ML Engineer would automate the model monitoring process and make remediation a breeze.

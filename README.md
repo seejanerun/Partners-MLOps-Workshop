@@ -621,7 +621,7 @@ You'll now see the below screen, once your app is active (should be within ~1-3 
 <img src = readme_images/ViewApp.png width="800">
 </p>       
         
-Once you're in the app you can try out sending different scoring requests to your model using the form on the right side of your page and see the results in the visualization on the left side.
+Once you're in the app you can try out sending different scoring requests to your model using the form on the right side of your page. Click **predict** to send a scoring request and view the results in the visualization on the left side.
                    
 <p align="center">
 <img src = readme_images/ShinyScore.png width="800">

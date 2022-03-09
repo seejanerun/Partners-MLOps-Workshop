@@ -606,7 +606,7 @@ Lines 61-79 in your file should look like the following (note the url and authen
                    
 Now that you have your app.sh and shiny_app.R files created. Navigate to the **App** tab in your project
 
-Enter a title for your app - 'wine-app-<yourname>'
+Enter a title for your app - 'wine-app-yourname'
 
 Click Publish.
                    

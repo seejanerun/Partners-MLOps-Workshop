@@ -603,6 +603,7 @@ Lines 61-79 in your file should look like the following (note the url and authen
 <img src = readme_images/ShinyCodePasted.png width="800">
 </p>         
 
+Click **Save**
                    
 Now that you have your app.sh and shiny_app.R files created. Navigate to the **App** tab in your project
 

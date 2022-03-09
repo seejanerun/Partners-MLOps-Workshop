@@ -349,7 +349,7 @@ To do so - navigate to the **Model APIs** tab in your project. Click **New Model
 <img src = readme_images/NewModelAPI.png width="800">
 </p>
 
-Name your model 'wine-model-<yourname>'
+Name your model 'wine-model-yourname'
     
 For the description add the following 
     

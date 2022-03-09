@@ -345,6 +345,10 @@ In the last lab - we trained a sklearn model and saved it to a serialized (pickl
 
 To do so - navigate to the **Model APIs** tab in your project. Click **New Model**.
 
+<p align="center">
+<img src = readme_images/NewModelAPI.png width="800">
+</p>
+
 Name your model 'wine-model-<yourname>'
     
 For the description add the following 
@@ -364,9 +368,15 @@ Sample Scoring Request:
   }
 }
 ```
-
+    
 Be sure to check the box *Log HTTP requests and responses to model instance logs* 
 
+<p align="center">
+<img src = readme_images/NewModelAPIConfig1.png width="800">
+</p>    
+
+Click **Next**. On the next page - 
+    
 For **Choose an Environment** select
 `Model-Deployment-Environment`
 
@@ -379,13 +389,25 @@ For **The function to invoke** enter
 `predict`
     
 And click **Create Model**
+    
+<p align="center">
+<img src = readme_images/NewModelAPIConfig.png width="800">
+</p>        
   
 Over the next 2-5 minutes, you'll see the status of your model go from Preparing to Build -> Building -> Starting -> Running
+<p align="center">
+<img src = readme_images/ModelAPIBuilding.png width="800">
+</p>        
+    
     
 Once your model reaches the Running state - a pod containing your model object and code for inference is up and ready to accept REST API calls.
 
 To test your model navigate to the Overview tab. In the request field in the Tester tab enter a scoring request in JSON form. You can copy the sample request that you defined in your description field.
-
+    
+<p align="center">
+<img src = readme_images/ScoringRequest.png width="800">
+</p>        
+    
 In the response box you will see a **prediction** value representing your model's predicted quality for a bottle of wine with the attributes defined in the Request box. Try changing 'is_red' from 0 to 1 and 'alcohol' from 11 to 5 to see how the predicted quality differs. Feel free to play around with different values in the Request box.
 
 After you have sent a few scoring requests to the model endpoint, check out the instance logs by clicking the Instance Logs button. Here you can see that all scoring requests to the model complete with model inputs, responses, response times, errors, warnings etc. are being logged. Close the browser tab that you were viewing the instance logs in. 
@@ -399,7 +421,11 @@ In the next lab we will deploy an R shiny app that exposes a front end for colle
 Now that we have a pod running to serve new model requests - we will build out a front end to make calling our model easier for end-users.
     
 To do so first navigate back to your **Files** tab and click **New File**
+<p align="center">
+<img src = readme_images/AddNewFileforAppsh.png width="800">
+</p>     
 
+    
 Copy the following code snippet in - 
 
 ```shell
@@ -425,8 +451,12 @@ R -e 'shiny::runApp("./scripts/shiny_app.R", port=8888, host="0.0.0.0")'
 #python app-dash.py
 ```
 Name the file **app.sh** and click **Save**
-    
-Now navigate back into the Files tab, and enter the scripts folder. Click add a new file and name it **shiny_app.R** paste the following into the file
+<p align="center">
+<img src = readme_images/appsh.png width="800">
+</p>         
+
+
+Now navigate back into the Files tab, and enter the **scripts** folder. Click add a new file and name it **shiny_app.R** paste the following into the file
 
 ```R
 #
@@ -564,7 +594,15 @@ shinyApp(ui = ui, server = server)
 
 **Go to line 63** note that this is missing input for your model api endpoint. In a new tab navigate to your model API you just deployed. Go into overview and select the R tab as shown below. Copy lines 4-7 from the R code snippet. Switch back to your new file tab and paste the new lines in line 64 in your file.
 
+<p align="center">
+<img src = readme_images/RcodeSnippet.png width="800">
+</p>                    
 Lines 61-79 in your file should look like the following (note the url and authenticate values will be different) 
+                   
+<p align="center">
+<img src = readme_images/ShinyCodePasted.png width="800">
+</p>         
+
                    
 Now that you have your app.sh and shiny_app.R files created. Navigate to the **App** tab in your project
 
@@ -575,3 +613,10 @@ Click Publish.
 You'll now see the below screen, once your app is active (should be within ~1-3 minutes) you can click the View App button. 
         
 Once you're in the app you can try out sending different scoring requests to your model using the form on the right side of your page and see the results in the visualization on the left side.
+                   
+<p align="center">
+<img src = readme_images/ShinyScore.png width="800">
+</p>         
+
+                   
+                   

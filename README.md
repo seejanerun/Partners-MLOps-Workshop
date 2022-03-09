@@ -289,7 +289,7 @@ You can also check out any of the training scripts that multitrain.py will call.
 Open a terminal by clicking the blue plus icon then the terminal icon as shown below 
 
 <p align="center">
-<img src = readme_images/Newterminal.png width="800">
+<img src = readme_images/NewTerminal.png width="800">
 </p>
 
 Type in the following command and press enter

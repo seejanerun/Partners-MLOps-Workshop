@@ -456,7 +456,7 @@ Name the file **app.sh** and click **Save**
 </p>         
 
 
-Now navigate back into the Files tab, and enter the **scripts** folder. Click add a new file and name it **shiny_app.R** paste the following into the file
+Now navigate back into the Files tab, and enter the **scripts** folder. Click add a new file and name it `shiny_app.R` (make sure the file name is exactly that, it is case sensitive) and then paste the following into the file -
 
 ```R
 #

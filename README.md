@@ -88,7 +88,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 <img src = readme_images/Goal1status.png width="800">
 </p>
 
-[optional] - Add a comment to the goal and tag a collaborator you've added earlier by typing @ then their username
+[optional] - Add a comment to the goal and tag a collaborator you've added earlier by typing @ then their username. Please click on the paper airplane to submit the comment.
 
 <!-- ![image](readme_images/Goal1comment.png) -->
 
@@ -99,7 +99,7 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 ### Lab 1.3 - Add Data Source
 
-We will now add a data connection defined by the admin of our project to later query in data. To do so - navigate to the Data tab of your projects
+We will now add a data connection defined by the admin of our project to later query in data. To do so - navigate to the Data tab of your projects. If you're taken to the Domino Datasets view, please click on the Data Sources view instead.
 
 <!-- ![image](readme_images/AddDataSource.png) -->
 
@@ -137,9 +137,6 @@ Scroll down to Pluggable Workspaces Tools - this is the area in the compute envi
 Scroll down to the Run Setup Scripts section
 
 Here we have a script that executes upon startup of workspace sessions or job (pre-run script) and a script that executes upon termination of a workspace session or job (post-run script) 
-
-Click on the Revisions tab - here you can see all the versions of an environment that have existed over time. You can see who built which version and, if you are permissed to do so, you can select 
-which revesion becomes the active version
 
 Finally navigate to the Projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
 
@@ -223,7 +220,7 @@ for i in list(important_feats.keys())+['quality']:
     sns.histplot(df[i], kde=True)
 ```
 
-Finallly write your data to a domino dataset by running
+Finallly write your data to a Domino Dataset by running
 
 ```python
 import os
@@ -255,7 +252,7 @@ Notice that the latest commit will reflect the commit message you just logged an
 <img src = readme_images/DFS.png width="800">
 </p>
 
-Click on your notebook to view it. On the top of your screen click 'Link to Goal' in the dropdown, select the goal you created in Lab 1.2
+Click on your notebook to view it. On the top of your screen and click 'Link to Goal' in the dropdown, after selecting the goal you created in Lab 1.2
 
 <p align="center">
 <img src = readme_images/LinkToGoal.png width="800">

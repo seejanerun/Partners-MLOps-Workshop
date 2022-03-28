@@ -283,23 +283,12 @@ Check out the code in the script and comments describing the purpose of each lin
 
 You can also check out any of the training scripts that multitrain.py will call.
 
-Open a terminal by clicking the blue plus icon then the terminal icon as shown below 
-
-<p align="center">
-<img src = readme_images/NewTerminal.png width="800">
-</p>
 
 Type in the following command and press enter
 
 ```shell
-python scripts/multitrain.py
+scripts/multitrain.py
 ```
-
-You should see the following output
-
-<p align="center">
-<img src = readme_images/MultiTrainKickOff.png width="800">
-</p>
 
 Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page.
 

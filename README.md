@@ -418,7 +418,7 @@ To do so - in a new tab first navigate back to your Project then into the **File
 <img src = readme_images/AddNewFileforAppsh.png width="800">
 </p>     
 
-    
+Next, we will create a file called app.sh. It's a bash script that will start and run the Shiny App server based on the inputs provided.
 Copy the following code snippet in - 
 
 ```shell
@@ -514,7 +514,7 @@ ui <- fluidPage(
  
 prediction <- function(inpFeat1,inpFeat2,inpFeat3,inpFeat4,inpFeat5) {
   
-#### COPY FULL LINES 4-7 from R tab in Model APIS page directly below
+#### COPY FULL LINES 4-7 from R tab in Model APIS page over this line of code. (It's a simple copy and paste) ####
     
     body=toJSON(list(data=list(density = inpFeat1, 
                                volatile_acidity = inpFeat2,

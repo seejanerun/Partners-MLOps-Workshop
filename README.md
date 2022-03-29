@@ -283,13 +283,13 @@ Check out the code in the script and comments describing the purpose of each lin
 
 You can also check out any of the training scripts that multitrain.py will call.
 
-Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page. Click on the "Runs" button.
+Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page. Click on **Run**.
 
 <p align="center">
 <img src = readme_images/Jobspage.png width="800">
 </p>
 
-Type in the following command below in the "File Name" section of the "Start a Job" pop up window. Click on the "Start" button to run the job.
+Type in the following command below in the **File Nam** section of the **Start a Job** pop up window. Click on **Start** to run the job.
 
 ```shell
 scripts/multitrain.py
@@ -371,7 +371,7 @@ Be sure to check the box *Log HTTP requests and responses to model instance logs
 Click **Next**. On the next page - 
     
 For **Choose an Environment** select
-`Model-Deployment-Environment`
+`Domino-Workshop-Environment`
 
 For **The file containing the code to invoke (must be a Python or R file)** enter
 

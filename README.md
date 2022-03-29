@@ -283,14 +283,21 @@ Check out the code in the script and comments describing the purpose of each lin
 
 You can also check out any of the training scripts that multitrain.py will call.
 
+Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page. Click on the "Runs" button.
 
-Type in the following command and press enter
+<p align="center">
+<img src = readme_images/Jobspage.png width="800">
+</p>
+
+Type in the following command below in the "File Name" section of the "Start a Job" pop up window. Click on the "Start" button to run the job.
 
 ```shell
 scripts/multitrain.py
 ```
 
-Now switch into your other browser tab to return to your domino project. Navigate to the Jobs page.
+<p align="center">
+<img src = readme_images/Jobsrun.png width="800">
+</p>
 
 Watch as three job runs have appeared, you may see them in starting, running or completed state.
 

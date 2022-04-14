@@ -13,7 +13,13 @@
 ## Section 1 - Project Set Up
 
 ### Lab 1.1 - Forking Existing Projects
-Once you have access to the Domino training environment - click the search button in the top left corner of the UI then use the search bar to discover any projects tagged for 'Training'
+Once you have access to the Domino training environment - Guide your mouse to the left blue menu and click the **Search** page. Afterwards, type the word 'Training' in the cell provided and click enter to discover any projects tagged under 'Training'. (The left blue menu shrinks to show only the icon of the pages. Unshrink the left blue menu by guiding your mouse over the icon pages.)
+
+<!-- ![image](readme_images/SearchIndex.png) -->
+
+<p align="center">
+<img src = readme_images/SearchIndex.png width="800">
+</p>
 
 Select the project called WineQuality
 
@@ -70,6 +76,12 @@ Change their permissions to Results Consumer.
 
 Click back into the Overview area of your project. Then navigate to the Manage tab.
 
+<!-- ![image](readme_images/Overview.png) -->
+
+<p align="center">
+<img src = readme_images/Overview.png width="800">
+</p>
+
 Click on Add Goals
 
 <!-- ![image](readme_images/AddProjectGoals.png) -->
@@ -101,6 +113,8 @@ For the goal title type in 'Explore Data' and click save. Once the goal is saved
 
 We will now add a data connection defined by the admin of our project to later query in data. To do so - navigate to the Data tab of your projects. If you're taken to the Domino Datasets view, please click on the Data Sources view instead and click on 'Add a Data Source'
 
+Select the 'domino-winequality-workshop' s3 bucket connection and click add to project
+
 <!-- ![image](readme_images/AddDataSource.png) -->
 
 <p align="center">
@@ -116,15 +130,30 @@ Select the 'domino-winequality-workshop' s3 bucket connection and click add to p
 <img src = readme_images/AddS3.png width="800">
 </p>
 
+The data source should look like the image below
+
+<!-- ![image](readme_images/S3done.png) -->
+
+<p align="center">
+<img src = readme_images/S3done.png width="800">
+</p>
 
 This concludes all labs in section 1 - Prepare Project and Data! 
 
 ## Section 2 - Develop Model
 
 ### Lab 2.1 - Inspect Compute Environment
-Click on the cube icon 'Environments' on the far left sidebar of the UI
+From the left blue menu click on the cube icon page called 'Environments'.
+
+<!-- ![image](readme_images/ShowEnv.png) -->
+
+<p align="center">
+<img src = readme_images/ShowEnv.png width="800">
+</p>
 
 Select 'Domino-Workshop-Environment' 
+
+<!-- ![image](readme_images/EnvironmentsPage.png) -->
 
 <p align="center">
 <img src = readme_images/EnvironmentsPage.png width="800">
@@ -139,6 +168,12 @@ Scroll down to the Run Setup Scripts section
 Here we have a script that executes upon startup of workspace sessions or job (pre-run script) and a script that executes upon termination of a workspace session or job (post-run script) 
 
 Finally navigate to the Projects tab - you should see all projects that are leveraging this compute environment. Click on your project to navigate back to your project. 
+
+<!-- ![image](readme_images/SaidEnvs.png) -->
+
+<p align="center">
+<img src = readme_images/SaidEnvs.png width="800">
+</p>
 
 Click into the Workspaces tab to prepare for the next lab.
 
@@ -168,7 +203,7 @@ Once the workspace is launched, create a new python notebook by clicking here:
 <img src = readme_images/NewNotebook.png width="800">
 </p>
 
-When you have your notebook loaded, click on the Data tab, then onto the data source we added in lab 1 as displayed below
+Once your notebook is loaded, click on the left blue menu and click on the Data page, then onto the data source we added in lab 1 as displayed below
 
 <p align="center">
 <img src = readme_images/DataTab.png width="800">
@@ -193,7 +228,7 @@ df=pd.read_csv(data)
 df.head()
 ```
 
-Now cell by cell, enter the following code and run the cells to visualize and prepare the data!
+Now cell by cell, copy the code snippets below and run the cells to visualize and prepare the data! (You can click on the '+' icon to add a blank cell after the current cell)
 
 ```python
 import seaborn as sns
@@ -220,13 +255,21 @@ for i in list(important_feats.keys())+['quality']:
     sns.histplot(df[i], kde=True)
 ```
 
-Finallly write your data to a Domino Dataset by running
+Finally write your data to a Domino Dataset by running
 
 ```python
 import os
 path = str('/domino/datasets/local/{}/WineQualityData.csv'.format(os.environ.get('DOMINO_PROJECT_NAME')))
 df.to_csv(path, index = False)
 ```
+
+Your notebook should be populated like the display below.
+
+<!-- ![image](readme_images/EDAView.png) -->
+
+<p align="center">
+<img src = readme_images/EDAView.png width="800">
+</p>
 
 Rename your notebook 'EDA_code.ipynb' by right clicking on the file name as shown below then click the Save icon.
 
@@ -244,7 +287,7 @@ Now that we've finished working on our notebook and written data back to our pro
 
 Enter an informative but brief commit message such as "Completed EDA notebook" and click to Sync All Changes. 
 
-Click the Domino logo in the top left to return to your Domino project, then navigate to the Files tab of your project.
+Click the Domino logo on the upper left corner of the blue menu and select on the Project page. Then select your project followed by selecting “Files” on the left blue menu as shown below.   
 
 Notice that the latest commit will reflect the commit message you just logged and you can see 'EDA_code.ipynb' in your file directory.
 
@@ -289,7 +332,7 @@ Now switch into your other browser tab to return to your domino project. Navigat
 <img src = readme_images/Jobspage.png width="800">
 </p>
 
-Type in the following command below in the **File Nam** section of the **Start a Job** pop up window. Click on **Start** to run the job.
+Type in the following command below in the **File Name** section of the **Start a Job** pop up window. Click on **Start** to run the job.
 
 ```shell
 scripts/multitrain.py
@@ -413,7 +456,7 @@ In the next lab we will deploy an R shiny app that exposes a front end for colle
     
 Now that we have a pod running to serve new model requests - we will build out a front end to make calling our model easier for end-users.
     
-To do so - in a new tab first navigate back to your Project then into the **Files** tab and click **New File**
+To do so - in a new browser tab first navigate back to your Project and then in the left blue menu of your project click into the **Files** section and click **New File**
 <p align="center">
 <img src = readme_images/AddNewFileforAppsh.png width="800">
 </p>     
@@ -654,3 +697,5 @@ PS - Domino provides free licenses for business users to login and view models/a
 ### *** End of Labs *** 
 
 So now that we've got our model into production are we done? No! We want to make sure that any models we deploy stay healthy over time, and if our models do drop in performance, we want to quickly identify and remediate any issues. Stay tuned for a demo of integrated model monitoring to see how a ML Engineer would automate the model monitoring process and make remediation a breeze.
+
+

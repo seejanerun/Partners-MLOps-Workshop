@@ -221,7 +221,7 @@ After running the code snippet. Copy the code below into the following cell
 from io import StringIO
 import pandas as pd
 
-s=str(objects[0].get(),'utf-8')
+s=str(object_store.get("winequality.csv"),'utf-8')
 data = StringIO(s) 
 
 df=pd.read_csv(data)
